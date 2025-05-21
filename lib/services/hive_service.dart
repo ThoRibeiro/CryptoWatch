@@ -1,5 +1,6 @@
 import 'package:hive/hive.dart';
 
+// Utilitaire pour la gestion locale des données via Hive (BDD Local)
 class HiveService {
   static const String favoritesBox = 'favoritesBox';
   static const String settingsBox = 'settingsBox';
@@ -33,7 +34,7 @@ class HiveService {
 
   static Future<String> getCurrency() async {
     final box = await Hive.openBox(settingsBox);
-    return box.get('currency', defaultValue: 'usd');
+    return box.get('currency', defaultValue: 'eur');
   }
 
   static String getSymbolFromCurrency(String currency) {

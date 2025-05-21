@@ -11,7 +11,7 @@ class SettingsView extends StatefulWidget {
 }
 
 class _SettingsViewState extends State<SettingsView> {
-  String _selectedCurrency = 'usd';
+  String _selectedCurrency = 'eur';
 
   @override
   void initState() {
@@ -59,8 +59,8 @@ class _SettingsViewState extends State<SettingsView> {
               value: _selectedCurrency,
               dropdownColor: const Color(0xFF1A1A1A),
               items: const [
-                DropdownMenuItem(value: 'usd', child: Text('USD (\$)', style: TextStyle(color: Colors.white))),
                 DropdownMenuItem(value: 'eur', child: Text('EUR (€)', style: TextStyle(color: Colors.white))),
+                DropdownMenuItem(value: 'usd', child: Text('USD (\$)', style: TextStyle(color: Colors.white))),
                 DropdownMenuItem(value: 'gbp', child: Text('GBP (£)', style: TextStyle(color: Colors.white))),
               ],
               onChanged: _updateCurrency,
@@ -71,9 +71,7 @@ class _SettingsViewState extends State<SettingsView> {
               ),
               style: const TextStyle(color: Colors.white),
             ),
-
           ],
-
         ),
       ),
     );

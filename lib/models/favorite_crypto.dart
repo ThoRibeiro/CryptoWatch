@@ -1,3 +1,4 @@
+// Model de donnée dans Hive
 class FavoriteCrypto {
   final String id;
   final String name;

@@ -19,7 +19,7 @@ class _CryptoDetailViewState extends State<CryptoDetailView> {
   Future<CryptoDetail>? _cryptoDetailFuture;
   double? price24hAgo;
   double? currentPrice;
-  String selectedCurrency = 'usd';
+  String selectedCurrency = 'eur';
 
   @override
   void initState() {

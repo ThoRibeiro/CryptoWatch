@@ -2,10 +2,12 @@ import 'dart:convert';
 import 'package:http/http.dart' as http;
 import 'package:fl_chart/fl_chart.dart';
 
+// Call HTTP Pour le service Chart de l'api "coingecko"
 class ChartService {
+  static const String _baseUrl = 'https://api.coingecko.com/api/v3';
   static Future<List<FlSpot>> fetchChartData(String cryptoId, String vsCurrency, String days) async {
     final url = Uri.parse(
-      'https://api.coingecko.com/api/v3/coins/$cryptoId/market_chart?vs_currency=$vsCurrency&days=$days&interval=${days == '1' ? 'hourly' : 'daily'}',
+      '$_baseUrl/coins/$cryptoId/market_chart?vs_currency=$vsCurrency&days=$days&interval=${days == '1' ? 'hourly' : 'daily'}',
     );
 
     final response = await http.get(url);

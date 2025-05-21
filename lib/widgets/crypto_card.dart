@@ -48,7 +48,7 @@ class CryptoCard extends StatelessWidget {
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
                     Text(
-                      '${crypto.symbol.toUpperCase()}/USDT',
+                      '${crypto.symbol.toUpperCase()}/EUR',
                       style: const TextStyle(
                         color: AppColors.textWhite,
                         fontWeight: FontWeight.bold,

@@ -1,3 +1,4 @@
+// Model de donnée dans Hive
 class CryptoDetail {
   final String id;
   final String name;
@@ -15,7 +16,7 @@ class CryptoDetail {
     return CryptoDetail(
       id: json['id'],
       name: json['name'],
-      description: json['description']['en'] ?? '',
+      description: json['description']['fr'] ?? '',
       homepageUrl: (json['links']['homepage'] as List).first ?? '',
     );
   }

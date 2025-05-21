@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:fl_chart/fl_chart.dart';
 import '../services/chart_service.dart';
-import '../theme/app_colors.dart'; // Fichier à créer si pas encore fait
+import '../theme/app_colors.dart';
 
 class CryptoChartSelector extends StatefulWidget {
   final String cryptoId;

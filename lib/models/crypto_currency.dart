@@ -1,3 +1,4 @@
+// Model de donnée dans Hive
 class CryptoCurrency {
   final String id;
   final String name;

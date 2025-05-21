@@ -3,6 +3,7 @@ import 'package:http/http.dart' as http;
 import '../models/crypto_currency.dart';
 import '../models/crypto_detail.dart';
 
+// Call HTTP pour l'api "coingecko"
 class ApiService {
   static const String _baseUrl = 'https://api.coingecko.com/api/v3';
 

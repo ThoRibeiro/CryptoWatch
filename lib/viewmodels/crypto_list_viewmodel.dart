@@ -7,7 +7,7 @@ class CryptoListViewModel extends ChangeNotifier {
   List<CryptoCurrency> cryptos = [];
   List<String> favorites = [];
   bool isLoading = false;
-  String selectedCurrency = 'usd';
+  String selectedCurrency = 'eur';
 
   // Charge la liste des cryptomonaies et des favoris depuis les services Hive et API
   Future<void> loadCryptos() async {

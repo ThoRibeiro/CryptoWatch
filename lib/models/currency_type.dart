@@ -1,9 +1,6 @@
-enum CurrencyType {
-  usd,
-  eur,
-  gbp,
-}
+import 'package:project/utils/enums/currency.dart';
 
+// Extension pour les types de monnaies
 extension CurrencyTypeExtension on CurrencyType {
   String get symbol {
     switch (this) {
@@ -16,5 +13,5 @@ extension CurrencyTypeExtension on CurrencyType {
     }
   }
 
-  String get code => name; // "usd", "eur", ...
+  String get code => name;
 }

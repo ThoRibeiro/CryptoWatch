@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 
+// Utilitaire pour centraliser les couleurs
 class AppColors {
   static const background = Color(0xFF0E0E0E);
   static const card = Color(0xFF1A1A1A);
