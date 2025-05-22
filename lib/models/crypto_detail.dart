@@ -16,7 +16,7 @@ class CryptoDetail {
     return CryptoDetail(
       id: json['id'],
       name: json['name'],
-      description: json['description']['fr'] ?? '',
+      description: json['description']['en'] ?? '',
       homepageUrl: (json['links']['homepage'] as List).first ?? '',
     );
   }

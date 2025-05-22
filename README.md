@@ -8,12 +8,12 @@
 ## 🚀 Fonctionnalités
 
 ### 🔸 1. Liste des crypto-monnaies
-- Affichage des 20 principales cryptos (nom, symbole, logo, prix, variation 24h)
-- Tri dynamique par prix, nom ou variation
+- Affichage des 20 principales cryptos (nom, symbole, logo, prix)
+- Tri dynamique par prix ou par nom 
 
 ### 🔸 2. Détail d’une crypto
-- Description, prix actuel, variation 24h / 7 jours
-- Graphique sparkline (évolution sur 7 jours)
+- Description, prix actuel, variation 24h / 7 jours / 30 jours
+- Graphique sparkline (évolution sur 24h / 7 jours / 30 jours)
 - Lien vers le site officiel
 
 ### 🔸 3. Gestion des favoris
@@ -22,14 +22,9 @@
 - Badge affichant le nombre de cryptos suivies
 
 ### 🔸 4. Conversion des prix
-- Choix de la devise (EUR, USD, GBP, etc.)
+- Choix de la devise (EUR, USD, GBP)
 - Conversion dynamique via l’API
 - Préférence sauvegardée localement
-
-### 🔸 5. Widget système (optionnel)
-- Widget affichant la crypto favorite ou la top 1
-- Prix + variation 24h
-- Accès rapide à la fiche depuis l’écran d’accueil
 
 ---
 
@@ -52,19 +47,18 @@ Structure basée sur MVVM simplifié :
 
 ## 🛠️ Technologies utilisées
 
-- **Flutter 3.19**
+- **Flutter**
 - **Dart**
 - **Provider** (state management)
 - **Hive** (stockage local)
 - **HTTP** (requêtes API)
 - **fl_chart** (graphique sparkline)
-- **flutter_widgetkit** (pour le widget natif iOS/macOS)
 
 ---
 
 ## 📦 API utilisée
 
-- [CoinGecko API](https://www.coingecko.com/en/api) – Accès libre, pas besoin de clé
+- [CoinGecko API](https://www.coingecko.com/en/api) – Accès libre
 
 ---
 
