@@ -83,6 +83,7 @@ class _SettingsViewState extends State<SettingsView> {
               ),
               const SizedBox(height: 16),
               CryptoFilterWidget(
+                key: ValueKey(_selectedCurrency),
                 initialSearch: viewModel.searchQuery,
                 initialRange: RangeValues(viewModel.minPrice, viewModel.maxPrice),
                 minPrice: viewModel.minPrice,

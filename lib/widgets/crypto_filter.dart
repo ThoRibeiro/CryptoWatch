@@ -50,6 +50,16 @@ class _CryptoFilterWidgetState extends State<CryptoFilterWidget> {
   }
 
   @override
+  void didUpdateWidget(covariant CryptoFilterWidget oldWidget) {
+    super.didUpdateWidget(oldWidget);
+
+    // Si les bornes min/max ont changé, on réinitialise
+    if(widget.minPrice != oldWidget.minPrice || widget.maxPrice != oldWidget.maxPrice) {
+      _currentRange = RangeValues(widget.minPrice, widget.maxPrice);
+    }
+  }
+  
+  @override
   Widget build(BuildContext context) {
     return Column(
       crossAxisAlignment: CrossAxisAlignment.start,
